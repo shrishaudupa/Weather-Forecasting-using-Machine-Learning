@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+{% extends "weather/base.html" %}
+{% load static %}
+{% block M %}
+    <style>
+        .custom-jumbotron {
+            background-image: url("{% static 'forecast/image/back1.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            color: darkred;
+
+        }
+
+        .jumbotron h1 {
+            font-size: 3.5rem;
+            border: 2px solid rgba(0, 123, 255, 0.3);;
+            padding: 10px;
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 2px;
+
+        }
+        
+
+        .jumbotron p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+
+        }
+
+        .btn-group {
+            margin-top: 20px;
+        }
+
+        .btn-group a {
+            margin: 0 20px;
+        }
+
+        .btn-outline-primary {
+            background-color: #fff;
+            border-color: #007bff;
+            color: #007bff;
+        }
+
+        .btn-outline-primary:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+
+    <div class="jumbotron custom-jumbotron">
+        <h1 class="display-4"><strong><strong> STATISTICS SECTION OF THIS PROJECT</strong></strong></h1>
+        <hr class="my-4">
+        
+        <p class="lead">
+            <div class="btn-group" role="group">
+                <a class="btn btn-outline-primary btn-lg" href="/table/" role="button"><strong>TABLE</strong></a>
+                <a class="btn btn-outline-primary btn-lg" href="/plot/" role="button"><strong>SEABORN HISTOGRAM</strong></a>
+                <a class="btn btn-outline-primary btn-lg" href="/percentage/" role="button"><strong>WEATHER CONDITION PERCENTAGES</strong></a>
+            </div>
+            <br>
+            <div class="btn-group" role="group">
+                <a class="btn btn-outline-primary btn-lg" href="/histogram/" role="button"><strong>HISTOGRAM</strong></a>
+                <a class="btn btn-outline-primary btn-lg" href="/violin/" role="button"><strong>VIOLIN PLOTS AND KDE</strong></a>
+                <a class="btn btn-outline-primary btn-lg" href="/box/" role="button"><strong>WEATHER BOXPLOT</strong></a>
+            </div>
+            <br>
+            <div class="btn-group" role="group">
+                <a class="btn btn-outline-primary btn-lg" href="/boxp/" role="button"><strong>boxp</strong></a>
+                <a class="btn btn-outline-primary btn-lg" href="/boxpw/" role="button"><strong>boxpw</strong></a>
+                <a class="btn btn-outline-primary btn-lg" href="/minimum/" role="button"><strong>minimum</strong></a>
+            </div>
+            <br>
+            <div class="btn-group" role="group">
+                <a class="btn btn-outline-primary btn-lg" href="/corelation/" role="button"><strong>corelation</strong></a>
+                <a class="btn btn-outline-primary btn-lg" href="/Precipitation/" role="button"><strong>Precipitation</strong></a>
+                <a class="btn btn-outline-primary btn-lg" href="/wind/" role="button"><strong>wind</strong></a>
+            </div>
+            <br>
+            <div class="btn-group" role="group">
+                <a class="btn btn-outline-primary btn-lg" href="/subplot/" role="button"><strong>subplot</strong></a>
+                <a class="btn btn-outline-primary btn-lg" href="/DataFrame/" role="button"><strong>DataFrame</strong></a>
+            </div>
+        </p>
+    </div>
+{% endblock M %}

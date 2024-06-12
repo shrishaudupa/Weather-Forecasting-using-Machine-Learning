@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scatter Plot: Wind vs. Temp Max</title>
+</head>
+<body>
+    <h1>Scatter Plot: Wind vs. Temp Max</h1>
+    <div>
+        <img src="{{ plot_image_path }}" alt="Scatter Plot">
+    </div>
+    <div>
+        <h2>Pearson Correlation Coefficient: {{ pearson_corr }}</h2>
+        <h2>T Statistic: {{ t_stat }}</h2>
+        <h2>P-Value: {{ p_value }}</h2>
+    </div>
+    <a href="/table/">Click here to go back</a>
+</body>
+</html>
